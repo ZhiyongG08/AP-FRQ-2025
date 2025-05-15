@@ -1,1 +1,6 @@
+public Round(String[] names){
+      competitorList = newArrayList<Competotpr>();
 
+      for(int i = 0; i < names.length; i++){
+          competetitorList.add(new Competitor(names[i], i + 1));
+}
