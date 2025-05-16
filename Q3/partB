@@ -1,1 +1,12 @@
+public ArrayList<Match> buildMatches(){
+    ArrayList<Match> matches = new ArrayList<Match>();
 
+    int best = competitorList.size() % 2;
+    int worst = competitorList.size() - 1;
+
+    while(best < worst){
+        matches.add(new Match(competitorList.get(best), competitorList.get(worst)));
+        best++;
+        worst--;
+}
+return matches;
